@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.when;
 
 class MobileBankApiTest {
     @Test
-    void shouldReturnDemoAccounts() {
+    void shouldReturnSendTo() {
         // Given - When - Then
         // Предусловия
         given()
@@ -21,7 +21,7 @@ class MobileBankApiTest {
                 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", org.hamcrest.Matchers.equalTo("Hi"));
+                .body("data", org.hamcrest.Matchers.equalTo("Hey"));
         ;
     }
 }
