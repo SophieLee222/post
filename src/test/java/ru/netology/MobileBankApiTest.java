@@ -2,12 +2,9 @@ package ru.netology;
 
 import org.junit.jupiter.api.Test;
 
-import javax.crypto.interfaces.DHKey;
-
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.when;
 
-class MobileBankApiTest {
+class PostmanTest {
     @Test
     void shouldReturnSendTo() {
         // Given - When - Then
